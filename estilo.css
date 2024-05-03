@@ -1,0 +1,201 @@
+* {    /* tamanho da fonte da página */
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   
+}
+
+img {   /* Imagem grande da Panvel */
+    padding: 0;
+    margin: 0;
+    width: 64%;
+    height: 99%;
+}
+.container-123 {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
+}
+
+.opcoes-123 {
+    z-index: 1;
+    display: none;
+  }
+ 
+  .opcoes-123 li {
+    
+    padding: 10px;
+    height: 10px;
+  }
+  
+  .texto-com-opcoes.clicked + .opcoes-123,
+  .texto-com-opcoes.clicked:hover + .opcoes-123 {
+    display: block;
+  }
+  
+
+.logo-panvel-1 img { /* Logo da Panvel */
+    width: 300px;
+    height: 80px;
+}
+
+.logo-panvel-1 {   /* Movimentação da imagem e tamanho e etc */
+    margin-top: 150px;
+    float: right;
+    margin-right: 290px;
+    height: 100px;
+    width: 100px;
+    
+}
+
+.label-line h3 {
+
+margin-top: 30px;
+display: flex;
+
+}   
+
+
+.acesse-text span {   /* TEXT: Acess a sua conta */
+
+    font-family: Arial, Helvetica, sans-serif system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.acesse-text {    /* Color, text, font, tamanho. */
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
+    text-align: center;
+    white-space: pre;
+    text-shadow: none !important;
+}
+
+.acesse-text-cont  {
+    margin-left: 30px;
+}
+
+
+
+
+
+.input-group, .input-group-addon {   /* INPUTS DO USUARIO E SENHA */
+    height: 15px;
+    margin-top: -06px;
+    display: table-cell;
+    position: relative; 
+   
+    margin: -19px;
+    
+}
+
+.input-group-addon svg {    /* Icone de usuario*/
+    width: 10px;  
+    margin-left: 3px;
+    border-color: #e5e5e5;
+    background: #e5e5e5;
+    margin-top: 10px;
+    min-width: 3px;
+    padding: 10px 14px ;
+    border-radius: 3px;
+    margin-right: 10px;
+ 
+}
+
+.input-group-1 {   /* Icone e Input: tamanho, largura, cor, text. */
+    display: block;
+   margin-left: 39px;
+   margin-top: -39px;
+   position: relative;
+   z-index: 1;
+   border-radius: 4px;
+   width: 280px;
+   border: 1px solid #ccc;
+   background-image: none;
+   margin-bottom: 0;
+   padding: 10px;
+   
+    height: 35px;
+    box-sizing: border-box; /* Garante que a largura inclua a borda */
+
+    /* Adiciona um estilo de foco */
+    outline: none;
+    transition: border-color 0.15s ease; /* Adiciona uma transição suave para a mudança de cor da borda */
+ 
+    /* Adiciona a borda quando o input está focado */
+    &:focus {
+       border-color: black; /* ou qualquer cor desejada */
+    }
+}
+
+
+.label-line, .input-group {
+display: block;
+
+}
+
+.input-group, .input-group-addon .input-group-1 {
+    margin-top: -60px;
+
+}
+
+.btn-auten {
+    cursor: pointer;
+    margin-left: 2px;
+    border-radius: 3px;
+    width: 320px;
+    border-width: 0;
+    font-size: 14px;
+    margin-top: 20px;
+   color: white;
+   height: 32px;
+   padding: 6px 14px;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+button:hover {
+    background-color: #357ebd;
+    color: white;
+}
+
+
+p {
+font-family: Arial, Helvetica, sans-serif;
+    white-space: pre;
+    
+}
+
+a {
+    color: #337ab7;
+    background-color: transparent;  
+   text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #337ab7;
+
+}
+
+.forget-password {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 104px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
