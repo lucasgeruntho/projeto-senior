@@ -185,7 +185,7 @@ button {
 }
 .btn-class-buttons-2 {
     
-
+margin-top: 12px; 
 margin-right: -50px;
    
 }
@@ -1472,6 +1472,128 @@ line-height: 24px;
 
 .test-h1 {
     margin-top: 120px;
+}
+
+
+
+.resume-tab-nav-option-10 {
+    margin-top: 25px;
+    margin-left: 02px;
+    background-color: #ffff;
+    border: 1px solid #ddd;
+    width: 350px;
+    position: relative;
+    padding: 15px;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    min-height: 50px;
+    z-index: 0;
+    transition: background-color .2s ease-out, border-color .2s ease-out;
+}
+        
+        
+        
+        
+.resume-tab-nav-option-10:hover {
+    background-color: rgb(238, 238, 238);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border: 1px solid #ddd ;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-style: solid;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    unicode-bidi: isolate;
+    }
+
+    .resume-tab-nav-option-10 svg {
+        margin-top: 5px;
+        width: 30px;
+        margin-left: 10px;
+    }
+
+.inf-plane-9 {
+    display: flex;
+    margin-left: 60px;
+    margin-top: -35px;
+} .inf-plane-9 span {
+    color: #428bca;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    line-height: 24px;
+}
+
+
+
+
+
+.resume-tab-nav-option-11 {
+    margin-top: -82px;
+    margin-left: 410px;
+    background-color: #ffff;
+    border: 1px solid #ddd;
+    width: 350px;
+    position: relative;
+    padding: 15px;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    min-height: 50px;
+    z-index: 0;
+    transition: background-color .2s ease-out, border-color .2s ease-out;
+                }
+            
+            
+.resume-tab-nav-option-11:hover {
+    background-color: rgb(238, 238, 238);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border: 1px solid #ddd ;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-style: solid;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    unicode-bidi: isolate;
+}        
+
+.resume-tab-nav-option-11 svg {
+    margin-top: 5px;
+    width: 40px;
+   
+}
+.inf-plane-10 {
+    display: flex;
+    margin-left: 60px;
+    margin-top: -35px;
+} .inf-plane-10 span {
+    color: #428bca;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+line-height: 24px;
+}
+
+.resume-tab-nav-option-11 img {
+    margin-top: 5px;
+    width: 40px;
 }
 
 
