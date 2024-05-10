@@ -27,3 +27,7 @@ function toggleSelected(element) {
   var options = document.querySelector('.options');
   options.style.display = isTextSelected ? 'block' : 'none';
 }
+
+
+
+
