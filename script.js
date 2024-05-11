@@ -12,22 +12,56 @@ function toggleBackground() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  var textoElement = document.getElementById('texto');
   var isTextSelected = localStorage.getItem('isTextSelected');
   if (isTextSelected === 'true') {
-    textoElement.classList.add('selected');
+    document.getElementById('texto').classList.add('selected');
     document.querySelector('.options').style.display = 'block';
+  }
+
+  var isTextSelectede = localStorage.getItem('isTextSelectede');
+  if (isTextSelectede === 'true') {
+    document.getElementById('texto-1').classList.add('selectede');
+    document.querySelector('.options2').style.display = 'block';
   }
 });
 
 function toggleSelected(element) {
-  element.classList.toggle("selected");
-  var isTextSelected = element.classList.contains('selected');
-  localStorage.setItem('isTextSelected', isTextSelected);
-  var options = document.querySelector('.options');
-  options.style.display = isTextSelected ? 'block' : 'none';
+  var otherElement = document.getElementById('texto-1');
+  var otherOptions = document.querySelector('.options2');
+  if (element.classList.contains("selected")) {
+    element.classList.remove("selected");
+    document.querySelector('.options').style.display = 'none';
+    localStorage.setItem('isTextSelected', false);
+  } else {
+    element.classList.add("selected");
+    document.querySelector('.options').style.display = 'block';
+    localStorage.setItem('isTextSelected', true);
+    if (otherElement.classList.contains("selectede")) {
+      otherElement.classList.remove("selectede");
+      otherOptions.style.display = 'none';
+      localStorage.setItem('isTextSelectede', false);
+    }
+  }
 }
 
+function ToggleSelection(element) {
+  var otherElement = document.getElementById('texto');
+  var otherOptions = document.querySelector('.options');
+  if (element.classList.contains("selectede")) {
+    element.classList.remove("selectede");
+    document.querySelector('.options2').style.display = 'none';
+    localStorage.setItem('isTextSelectede', false);
+  } else {
+    element.classList.add("selectede");
+    document.querySelector('.options2').style.display = 'block';
+    localStorage.setItem('isTextSelectede', true);
+    if (otherElement.classList.contains("selected")) {
+      otherElement.classList.remove("selected");
+      otherOptions.style.display = 'none';
+      localStorage.setItem('isTextSelected', false);
+    }
+  }
+}
 
 
 
