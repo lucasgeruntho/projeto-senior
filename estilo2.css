@@ -1843,7 +1843,7 @@ line-height: 24px;
     white-space-collapse: collapse;
     vertical-align: middle;
     margin-left: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
           
           
@@ -1886,27 +1886,24 @@ line-height: 24px;
 
 
 .colleagues.selectede::after {
-
     top: 35px;
     background-color: #428bca; 
-            }
+}
     
                     
 .colleagues:hover::after {
     background-color: #ddd; 
-    top: 35px;
-              
-             
+    top: 35px;         
 }
             
             
 .colleagues.selectede:hover::after {
     background-color: #428bca; 
-            }
+}
             
   
 
-.linha-horizontal-2 { 
+.linha-horizontal-2 {  /* segundo linha de colegas */
         display: flex;
         margin-top: 250px;            
 }
@@ -1920,11 +1917,12 @@ line-height: 24px;
     height: 1px;
     margin-left: 100px;
     background-color: #ddd;
-    top: 36%;
+    top: 37%;
 }
 
 
-.linha-horizontal-3 { 
+
+.linha-horizontal-3 { /* primeira linha embaixo de colegas */
     display: flex;
           
 }
@@ -1937,7 +1935,7 @@ left: 107px;
 width: 88%;
 height: 1px;
 background-color: #ddd;
-top: 45%;
+top: 44%;
 
 }
 
@@ -1955,8 +1953,8 @@ top: 45%;
     padding-left: 30px;
 }
 
-.background-color {
-    margin-top: -240px;
+.background-color {   /* background das pessoas,informações */
+    margin-top: -352px;
     display: flex;
 }
 
@@ -1969,46 +1967,213 @@ top: 45%;
     margin-top: 10px;
     display: flex;
 }
-.btn-stars button {
+.button-movi-left button {
     cursor: pointer;
     height: 25px;
     border-radius: 20px;
-    border: 1px solid #ccc;
+    background-color: transparent;
+    border: 1px solid rgb(204, 204, 204);
     width: 40px;
-   padding: 5px 10px;
+    padding: 5px 10px;
+    transition: background-color 0.5s ease;
+}
+.button-movi-left{
+    display: flex;
 }
 
 .btn-stars svg {
+    position: absolute;
     transform: translate(-50%, -50%);
-    margin: 0px 08px;
-    padding-top: 11px;
-    width: 18px;
+    margin: 0px 0px;
+    padding-top: -10px;
+    width: 17px;
+    margin-top: -1px;
 }
+
+.btn-stars button:hover{
+    background-color: #f2f2f2;
+}
+
 
 
 .background-nav-opcoes-people-background-primary {
 display: flex;
-padding-right: 270px;
-margin-top: -130px;
+padding-right: 290px;
+margin-top: -150px;
 z-index: 1;
-padding-top: 120px;
+padding-top: 270px;
 margin-left: 20px;
-border: 1px solid;
-background-color: #428bca;
+border: 1px solid #ddd;
+background-color: transparent;
 }
 
 
 
-.nav-opcoes-people-photo-primary {
-    margin-left: 30px;
+/* photo abertura */
+
+.nav-opcoes-people-photo-primary { /* primeira foto */
+    margin-left: 100px;
+    margin-top: -90px;
+    display: flex;
+    
+}
+.nav-opcoes-people-photo-primary img {  /* tamanho da foto */
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -10px;
+    width: 120px;
+    border-radius: 50% !important;
+    max-width: 90px;
+    max-height: 80px;
+}
+.nav-photo-peaple { /* posicionamento da minha foto */
+    position: relative;
+    display: flex;
+    margin-top: -70px;
+     margin-left: 10px;
+
+}
+
+/* primeira photo fechamento */
+
+
+
+    /* text primeiro com nome da pessoa */
+.nav-text-peape-primary {
+    margin-left: -40px;
+    position: relative;
+    margin-top: -35px;
+}
+
+.nav-text-peape-primary h1 {
+    color: #428bca;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.nav-text-peape-primary a {
+    cursor: pointer;
+    color: #428bca;
+    text-decoration: none;
+}
+.nav-text-peape-primary a:hover {
+    text-decoration: underline;
 }
 
 
+    /* FECHAMENTO */
 
 
 
 
+/* Abertura do segundo text */
+.nav-text-peape-segundary {
+    margin-top: -10px;
+}
+
+.nav-text-peape-segundary span {
+    color: #999999;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+/* FECHAMENTO */
 
 
 
+/* Abertura do terceiro text */
+
+.nav-text-peape-third {
+    text-align: center;
+    text-wrap: nowrap;
+    margin-top: 3px;
+    font-size: 14px;
+    height: auto;
+    line-height: 18.2px;
+    white-space: nowrap;
+}
+    /* FECHAMENTO */
+
+
+
+
+.btn-nav-people {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-nav {
+  border-radius: 20px;
+  padding: 7px 20px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  width: 90px;
+  margin-top: 14px;
+  margin-left: 27px;
+  align-items: center;
+}
+
+.btn-opcoes-nav {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 210px;
+  margin-top: 12px;
+  margin-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.btn-opcoes-nav a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: auto;
+  line-height: 18.2px;
+  white-space: nowrap; 
+  margin-left: 10px;
+
+}
+
+.btn-opcoes-nav a:hover {
+  background-color: #ddd;
+  width: 158px;
+  transition: background-color 1s ease;
+}
+
+.caret {
+  margin-left: -10px;
+  width: 20px;
+  height: 16px;
+}
+.text-terse {
+    display: flex;
+    margin-left: 12px;
+}
+
+.opcoes-nav-text {
+    margin-left: -10px;
+    margin-top: -2px;
+}
+.opcoes-nav-text span {
+    color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+
+    
 
