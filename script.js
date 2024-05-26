@@ -101,3 +101,40 @@ document.addEventListener('click', function(event) {
   }
 });
 
+
+
+
+
+var dropdownVisible2 = false;
+
+  function toggleDropdown2() {
+    var dropdownContent = document.getElementById("btncontent-2");
+    var caretDown = document.querySelector(".caret-down-2");
+    var caretUp = document.querySelector(".caret-up-2");
+    dropdownVisible2 = !dropdownVisible2;
+    if (dropdownVisible2) {
+      dropdownContent.style.display = "block";
+      caretDown.style.display = "none";
+      caretUp.style.display = "block";
+    } else {
+      dropdownContent.style.display = "none";
+      caretDown.style.display = "block";
+      caretUp.style.display = "none";
+    }
+  }
+
+  document.addEventListener('click', function(event) {
+    var isClickInsideDropdown = document.getElementById('btncontent-2').contains(event.target);
+    var isClickOnButton = event.target.closest('.btn-nav-people-2');
+
+    if (!isClickInsideDropdown && !isClickOnButton) {
+      var dropdownContent = document.getElementById('btncontent-2');
+      var caretDown = document.querySelector(".caret-down-2");
+      var caretUp = document.querySelector(".caret-up-2");
+      dropdownContent.style.display = 'none';
+      caretDown.style.display = "block";
+      caretUp.style.display = "none";
+      dropdownVisible2 = false;
+    }
+  });
+
