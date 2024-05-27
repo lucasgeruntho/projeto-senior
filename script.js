@@ -74,15 +74,18 @@ function toggleDropdown() {
   var dropdownContent = document.getElementById("btncontent");
   var caretDown = document.querySelector(".caret-down");
   var caretUp = document.querySelector(".caret-up");
+  var button = document.querySelector(".btn-nav");
   dropdownVisible = !dropdownVisible;
   if (dropdownVisible) {
     dropdownContent.style.display = "block";
     caretDown.style.display = "none";
     caretUp.style.display = "block";
+    button.classList.add("select");
   } else {
     dropdownContent.style.display = "none";
     caretDown.style.display = "block";
     caretUp.style.display = "none";
+    button.classList.remove("select");
   }
 }
 
@@ -94,10 +97,12 @@ document.addEventListener('click', function(event) {
     var dropdownContent = document.getElementById('btncontent');
     var caretDown = document.querySelector(".caret-down");
     var caretUp = document.querySelector(".caret-up");
+    var button = document.querySelector(".btn-nav");
     dropdownContent.style.display = 'none';
     caretDown.style.display = "block";
     caretUp.style.display = "none";
     dropdownVisible = false;
+    button.classList.remove("select");
   }
 });
 
@@ -109,17 +114,20 @@ var dropdownVisible2 = false;
 
   function toggleDropdown2() {
     var dropdownContent = document.getElementById("btncontent-2");
-    var caretDown = document.querySelector(".caret-down-2");
-    var caretUp = document.querySelector(".caret-up-2");
+    var caretDown = document.querySelector(".caret-down");
+    var caretUp = document.querySelector(".caret-up");
+    var button = document.querySelector(".btn-nav-2");
     dropdownVisible2 = !dropdownVisible2;
     if (dropdownVisible2) {
       dropdownContent.style.display = "block";
       caretDown.style.display = "none";
       caretUp.style.display = "block";
+      button.classList.add("select");
     } else {
       dropdownContent.style.display = "none";
       caretDown.style.display = "block";
       caretUp.style.display = "none";
+      button.classList.remove("select");
     }
   }
 
@@ -129,12 +137,59 @@ var dropdownVisible2 = false;
 
     if (!isClickInsideDropdown && !isClickOnButton) {
       var dropdownContent = document.getElementById('btncontent-2');
-      var caretDown = document.querySelector(".caret-down-2");
-      var caretUp = document.querySelector(".caret-up-2");
+      var caretDown = document.querySelector(".caret-down");
+      var caretUp = document.querySelector(".caret-up");
+      var button = document.querySelector(".btn-nav-2");
       dropdownContent.style.display = 'none';
       caretDown.style.display = "block";
       caretUp.style.display = "none";
+      button.classList.remove("select");
       dropdownVisible2 = false;
     }
   });
 
+
+
+
+
+
+  var dropdownVisible3 = false;
+
+  function toggleDropdown3() {
+    var dropdownContent = document.getElementById("btncontent-3");
+    var caretDown = document.querySelector(".caret-down");
+    var caretUp = document.querySelector(".caret-up");
+    var button = document.querySelector(".btn-nav-third");
+
+    dropdownVisible3 = !dropdownVisible3;
+
+    if (dropdownVisible3) {
+      dropdownContent.style.display = "block";
+      caretDown.style.display = "none";
+      caretUp.style.display = "block";
+      button.classList.add("active");
+    } else {
+      dropdownContent.style.display = "none";
+      caretDown.style.display = "block";
+      caretUp.style.display = "none";
+      button.classList.remove("active");
+    }
+  }
+
+  document.addEventListener('click', function(event) {
+    var isClickInsideDropdown = document.getElementById('btncontent-3').contains(event.target);
+    var isClickOnButton = event.target.closest('.btn-nav-people-third');
+
+    if (!isClickInsideDropdown && !isClickOnButton) {
+      var dropdownContent = document.getElementById('btncontent-3');
+      var caretDown = document.querySelector(".caret-down");
+      var caretUp = document.querySelector(".caret-up");
+      var button = document.querySelector(".btn-nav-third");
+
+      dropdownContent.style.display = 'none';
+      caretDown.style.display = "block";
+      caretUp.style.display = "none";
+      button.classList.remove("active");
+      dropdownVisible3 = false;
+    }
+  });
