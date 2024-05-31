@@ -282,9 +282,46 @@ var dropdownVisible2 = false;
     }
   });
 
-
+// fechamento
  
 
+var dropdownVisible6 = false;
 
+  function toggleDropdown6() {
+    var dropdownContent = document.getElementById("btncontent-6");
+    var caretDown = document.querySelector(".caret-down-6");
+    var caretUp = document.querySelector(".caret-up-6");
+    var button = document.querySelector(".btn-nav-friday");
+
+    dropdownVisible6 = !dropdownVisible6;
+    if (dropdownVisible6) {
+      dropdownContent.style.display = "block";
+      caretDown.style.display = "none";
+      caretUp.style.display = "block";
+      button.classList.add("select");
+    } else {
+      dropdownContent.style.display = "none";
+      caretDown.style.display = "block";
+      caretUp.style.display = "none";
+      button.classList.remove("select");
+    }
+  }
+
+  document.addEventListener('click', function(event) {
+    var isClickInsideDropdown = document.getElementById('btncontent-6').contains(event.target);
+    var isClickOnButton = event.target.closest('.btn-nav-people-friday');
+    var button = document.querySelector(".btn-nav-friday");
+
+    if (!isClickInsideDropdown && !isClickOnButton) {
+      var dropdownContent = document.getElementById('btncontent-6');
+      var caretDown = document.querySelector(".caret-down-6");
+      var caretUp = document.querySelector(".caret-up-6");
+      dropdownContent.style.display = 'none';
+      caretDown.style.display = "block";
+      caretUp.style.display = "none";
+      dropdownVisible6 = false;
+      button.classList.remove("select");
+    }
+  });
 
 

@@ -2804,12 +2804,14 @@ background-color: transparent;
 
 
 
+/* abertura da minha quinta pessoa */
 
 
+
+/* primeira opção de background */
 .background-nav-opcoes-people-fifth {
   
     margin-top: -337px;
-    margin-left: 20px;
     display: flex;
     padding-right: 284px;
    position: relative;
@@ -2818,6 +2820,8 @@ background-color: transparent;
     border: 1px solid #ddd;
     background-color: transparent;
 }
+
+/* fechamento */
 
 
 
@@ -2938,11 +2942,11 @@ background-color: transparent;
 
 
 
-  .opcoes-nav-text-fifth {
+.opcoes-nav-text-fifth {
     margin-left: -10px;
     margin-top: -2px;
 }
-.opcoes-nav-text-fift span {
+.opcoes-nav-text-fifth span {
     color: #333;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
@@ -2996,3 +3000,330 @@ background-color: transparent;
     
   }
 
+  /* Fechamento */
+
+
+
+
+  /* abertura da minha sexta pessoa */
+
+  .background-nav-opcoes-people-friday {
+    margin-top: -270px;
+    display: flex;
+    padding-right: 284px;
+    position: relative;
+    padding-top: 180px;
+    margin-left: 207px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+  }
+
+  .nav-photo-peple-friday  { /* primeira foto */
+    margin-left: 100px;
+    margin-top: -10px;
+    display: flex;
+   
+    
+}
+.nav-photo-people-friday img {  /* tamanho da foto */
+    
+    margin-top: -60px;
+    margin-left: 100px;
+    width: 120px;
+    border-radius: 50% !important;
+    max-width: 90px;
+    max-height: 80px;
+    
+}
+.nav-photo-friday { /* posicionamento da minha foto */
+   
+    display: flex;
+    margin-top: -70px;
+    margin-left: 10px;
+
+}
+
+.nav-text-friday { /* primeiro nome*/
+        margin-left: 59px;
+        position: relative;
+        margin-top: 13px;
+}
+    
+.nav-text-friday h1 {
+    color: #428bca;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.nav-text-friday a {
+    cursor: pointer;
+    color: #428bca;
+    text-decoration: none;
+}
+
+.nav-text-friday a:hover {
+    text-decoration: underline;
+}
+
+
+/* Abertura do meu segundo nome nome */
+.nav-text-friday-segundary {
+    margin-top: 8px;
+    margin-left: 60px;
+}
+
+.nav-text-friday-segundary span {
+    color: #999999;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+}   /* FECHAMENTO */
+
+
+
+
+.nav-text-friday-third {
+
+    text-align: center;
+    text-wrap: nowrap;
+    margin-left: 59px;
+    font-size: 14px;
+    height: auto;
+    line-height: 18.2px;
+    white-space: nowrap;
+}
+
+
+
+.btn-nav-people-friday {
+    position: relative;
+    display: inline-block;
+   margin-left: -23px;
+  }
+  .btn-nav-friday {
+
+  border-radius: 20px;
+  padding: 7px 20px;
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+  display: flex;
+  width: 90px;
+  margin-top: 14px;
+  margin-left: 40px;
+  transition: background-color 0.2s; 
+  border-color: rgb(204, 204, 204);
+  align-items: center;
+  } 
+
+  .btn-nav-friday:hover, .btn-nav-friday.select{
+    background-color: #d2d2d2;
+    
+  }
+
+
+
+  
+.opcoes-nav-text-friday {
+    margin-left: -10px;
+    margin-top: -2px;
+}
+.opcoes-nav-text-friday span {
+    color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+.text-terse-friday {
+    display: flex;
+    margin-left: 5;
+}
+
+
+
+
+
+.btn-opcoes-nav-friday-3 {
+    display: none;
+    
+    background-color: #f1f1f1;
+    min-width: 210px;
+    margin-top: 12px;
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+.btn-opcoes-nav-friday-3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    height: auto;
+    line-height: 18.2px;
+    white-space: nowrap; 
+    margin-left: 10px;
+    font-size: 15px;
+    width: 0;
+    
+    
+}
+
+.btn-opcoes-nav-friday-3 a:hover {
+    background-color: #ddd;
+    width: 158px;
+    margin-left: 10px;
+    
+  }
+
+
+
+
+  .background-nav-opcoes-people-decima {
+    margin-top: -270px;
+    display: flex;
+    padding-right: 284px;
+    position: relative;
+    padding-top: 180px;
+    margin-left: 19px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+  }
+
+
+
+  .nav-photo-people-decima { /* primeira foto */
+    margin-left: 100px;
+    margin-top: 2px;
+    display: flex;
+    
+}
+.nav-photo-people-decima img {  /* tamanho da foto */
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -10px;
+    width: 120px;
+    border-radius: 50% !important;
+    max-width: 90px;
+    max-height: 80px;
+}
+.nav-photo-decima { /* posicionamento da minha foto */
+    position: relative;
+    display: flex;
+    margin-top: -70px;
+    margin-left: 10px;
+
+}
+
+
+
+.nav-text-decima { /* primeiro nome*/
+    margin-left: -37px;
+    position: relative;
+    margin-top: -39px;
+}
+
+.nav-text-decima h1 {
+color: #428bca;
+white-space: nowrap;
+font-size: 14px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.nav-text-decima a {
+cursor: pointer;
+color: #428bca;
+text-decoration: none;
+}
+
+.nav-text-decima a:hover {
+text-decoration: underline;
+}
+
+
+/* Abertura do meu segundo nome nome */
+.nav-text-decima-segundary {
+ margin-top: -12px;
+    margin-left: -20px;
+}
+
+.nav-text-decima-segundary span {
+    color: #999999;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+}   /* FECHAMENTO */
+
+
+
+
+
+.nav-text-decima-third {
+
+    text-align: center;
+    text-wrap: nowrap;
+    margin-left: 19px;
+    font-size: 14px;
+    margin-top: 08px;
+    height: auto;
+    line-height: 18.2px;
+    white-space: nowrap;
+}
+
+
+
+.btn-nav-people-decima {
+    position: relative;
+    display: inline-block;
+   margin-left: -23px;
+  }
+  .btn-nav-decima {
+
+  border-radius: 20px;
+  padding: 7px 20px;
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+  display: flex;
+  width: 90px;
+  margin-top: 14px;
+  margin-left: 40px;
+  transition: background-color 0.2s; 
+  border-color: rgb(204, 204, 204);
+  align-items: center;
+  } 
+
+  .btn-nav-decima:hover, .btn-nav-decima.select{
+    background-color: #d2d2d2;
+    
+  }
+
+
+  .opcoes-nav-text-decima {
+    margin-left: -10px;
+    margin-top: -2px;
+}
+.opcoes-nav-text-decima span {
+    color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
