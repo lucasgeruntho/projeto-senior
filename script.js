@@ -66,7 +66,7 @@ function ToggleSelection(element) {
 
 
 
-
+// primeiro botão
 
 var dropdownVisible = false;
 
@@ -108,14 +108,14 @@ document.addEventListener('click', function(event) {
 
 
 
-
+// segundo botão
 
 var dropdownVisible2 = false;
 
   function toggleDropdown2() {
     var dropdownContent = document.getElementById("btncontent-2");
-    var caretDown = document.querySelector(".caret-down");
-    var caretUp = document.querySelector(".caret-up");
+    var caretDown = document.querySelector(".caret-down-2");
+    var caretUp = document.querySelector(".caret-up-2");
     var button = document.querySelector(".btn-nav-2");
     dropdownVisible2 = !dropdownVisible2;
     if (dropdownVisible2) {
@@ -137,8 +137,8 @@ var dropdownVisible2 = false;
 
     if (!isClickInsideDropdown && !isClickOnButton) {
       var dropdownContent = document.getElementById('btncontent-2');
-      var caretDown = document.querySelector(".caret-down");
-      var caretUp = document.querySelector(".caret-up");
+      var caretDown = document.querySelector(".caret-down-2");
+      var caretUp = document.querySelector(".caret-up-2");
       var button = document.querySelector(".btn-nav-2");
       dropdownContent.style.display = 'none';
       caretDown.style.display = "block";
@@ -152,13 +152,13 @@ var dropdownVisible2 = false;
 
 
 
-
+// terceio botão
   var dropdownVisible3 = false;
 
   function toggleDropdown3() {
     var dropdownContent = document.getElementById("btncontent-3");
-    var caretDown = document.querySelector(".caret-down");
-    var caretUp = document.querySelector(".caret-up");
+    var caretDown = document.querySelector(".caret-down-3");
+    var caretUp = document.querySelector(".caret-up-3");
     var button = document.querySelector(".btn-nav-third");
 
     dropdownVisible3 = !dropdownVisible3;
@@ -182,8 +182,8 @@ var dropdownVisible2 = false;
 
     if (!isClickInsideDropdown && !isClickOnButton) {
       var dropdownContent = document.getElementById('btncontent-3');
-      var caretDown = document.querySelector(".caret-down");
-      var caretUp = document.querySelector(".caret-up");
+      var caretDown = document.querySelector(".caret-down-3");
+      var caretUp = document.querySelector(".caret-up-3");
       var button = document.querySelector(".btn-nav-third");
 
       dropdownContent.style.display = 'none';
@@ -195,14 +195,14 @@ var dropdownVisible2 = false;
   });
 
 
-
+// quarto botão
 
   var dropdownVisible4 = false;
 
   function toggleDropdown4() {
     var dropdownContent = document.getElementById("btncontent-4");
-    var caretDown = document.querySelector(".caret-down");
-    var caretUp = document.querySelector(".caret-up");
+    var caretDown = document.querySelector(".caret-down-4");
+    var caretUp = document.querySelector(".caret-up-4");
     var button = document.querySelector(".btn-nav-fourth");
 
     dropdownVisible4 = !dropdownVisible4;
@@ -226,8 +226,8 @@ var dropdownVisible2 = false;
 
     if (!isClickInsideDropdown && !isClickOnButton) {
       var dropdownContent = document.getElementById('btncontent-4');
-      var caretDown = document.querySelector(".caret-down");
-      var caretUp = document.querySelector(".caret-up");
+      var caretDown = document.querySelector(".caret-down-4");
+      var caretUp = document.querySelector(".caret-up-4");
       dropdownContent.style.display = 'none';
       caretDown.style.display = "block";
       caretUp.style.display = "none";
@@ -237,7 +237,50 @@ var dropdownVisible2 = false;
   });
 
 
+  // fechamento 
 
+
+
+
+// Abertura da minha quarta pessoa
+  var dropdownVisible5 = false;
+
+  function toggleDropdown5() {
+    var dropdownContent = document.getElementById("btncontent-5");
+    var caretDown = document.querySelector(".caret-down-5");
+    var caretUp = document.querySelector(".caret-up-5");
+    var button = document.querySelector(".btn-nav-fifth");
+
+    dropdownVisible5 = !dropdownVisible5;
+    if (dropdownVisible5) {
+      dropdownContent.style.display = "block";
+      caretDown.style.display = "none";
+      caretUp.style.display = "block";
+      button.classList.add("select");
+    } else {
+      dropdownContent.style.display = "none";
+      caretDown.style.display = "block";
+      caretUp.style.display = "none";
+      button.classList.remove("select");
+    }
+  }
+
+  document.addEventListener('click', function(event) {
+    var isClickInsideDropdown = document.getElementById('btncontent-5').contains(event.target);
+    var isClickOnButton = event.target.closest('.btn-nav-people-fifth');
+    var button = document.querySelector(".btn-nav-fifth");
+
+    if (!isClickInsideDropdown && !isClickOnButton) {
+      var dropdownContent = document.getElementById('btncontent-5');
+      var caretDown = document.querySelector(".caret-down-5");
+      var caretUp = document.querySelector(".caret-up-5");
+      dropdownContent.style.display = 'none';
+      caretDown.style.display = "block";
+      caretUp.style.display = "none";
+      dropdownVisible5 = false;
+      button.classList.remove("select");
+    }
+  });
 
 
  

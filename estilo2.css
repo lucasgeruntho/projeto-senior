@@ -1909,7 +1909,7 @@ line-height: 24px;
 }
 
 .linha-2 {
-        
+    z-index: 1;
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -1917,7 +1917,7 @@ line-height: 24px;
     height: 1px;
     margin-left: 100px;
     background-color: #ddd;
-    top: 37%;
+    top: 36%;
 }
 
 
@@ -1935,8 +1935,8 @@ left: 107px;
 width: 88%;
 height: 1px;
 background-color: #ddd;
-top: 44%;
-
+top: 42%;
+z-index: 1;
 }
 
 
@@ -1947,15 +1947,17 @@ top: 44%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: 1px solid #ddd;
     background-color: #ffffff;
-    padding-right: 1205px;
-    height: 600px;
-    padding-top: 20px;
+    height: 690px;
+    padding-top: 17px;
+    padding-right: 1200px;
     padding-left: 30px;
 }
 
 .background-color {   /* background das pessoas,informações */
     margin-top: -352px;
     display: flex;
+    position: relative;
+    
 }
 
 .btn-stars {
@@ -1997,27 +1999,24 @@ top: 44%;
 
 
 .background-nav-opcoes-people-background-primary {
-display: flex;
-padding-right: 284px;
-margin-top: -150px;
-z-index: 1;
-padding-top: 270px;
-margin-left: 26px;
-border: 1px solid #ddd;
-background-color: transparent;
+    display: flex;
+    padding-right: 284px;
+    margin-top: -150px;
+    z-index: 1;
+    padding-top: 270px;
+    margin-left: 26px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    position: relative; /* Certifica-se de que os filhos sejam posicionados relativamente a este elemento */
 }
 
-
-
-/* photo abertura */
-
-.nav-opcoes-people-photo-primary { /* primeira foto */
+/* foto abertura */
+.nav-opcoes-people-photo-primary {
     margin-left: 100px;
     margin-top: -90px;
     display: flex;
-    
 }
-.nav-opcoes-people-photo-primary img {  /* tamanho da foto */
+.nav-opcoes-people-photo-primary img {
     position: absolute;
     margin-top: -60px;
     margin-left: -10px;
@@ -2026,31 +2025,24 @@ background-color: transparent;
     max-width: 90px;
     max-height: 80px;
 }
-.nav-photo-peaple { /* posicionamento da minha foto */
+.nav-photo-peaple {
     position: relative;
     display: flex;
     margin-top: -70px;
-     margin-left: 10px;
-
+    margin-left: 10px;
 }
 
-/* primeira photo fechamento */
-
-
-
-    /* text primeiro com nome da pessoa */
+/* text primeiro com nome da pessoa */
 .nav-text-peape-primary {
     margin-left: -40px;
     position: relative;
     margin-top: -35px;
 }
-
 .nav-text-peape-primary h1 {
     color: #428bca;
     white-space: nowrap;
     font-size: 14px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 .nav-text-peape-primary a {
     cursor: pointer;
@@ -2059,6 +2051,27 @@ background-color: transparent;
 }
 .nav-text-peape-primary a:hover {
     text-decoration: underline;
+}
+
+/* Adiciona o estilo para o hover */
+.hover-content {
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Fixa o elemento na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    z-index: 1000; /* Garante que esteja acima de todos os outros elementos */
+}
+.background-nav-opcoes-people-background-primary:hover .hover-content {
+    display: block; /* Mostra o elemento quando o container é hover */
+}
+
+/* Apenas para estilo do conteúdo abaixo */
+.content {
+    height: 2000px; /* Altura grande para demonstrar o efeito */
+    background-color: #f0f0f0;
 }
 
 
@@ -2123,22 +2136,23 @@ background-color: transparent;
   margin-left: 38px;
   transition: background-color 0.2s; 
   border-color: rgb(204, 204, 204);
-  
+  z-index: 1;
   align-items: center;
 } 
 
 .btn-nav:hover, .btn-nav.select {
-   
+  
     background-color: #d2d2d2;
 
 }
+
 
 .btn-opcoes-nav {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
   min-width: 210px;
-  margin-top: 12px;
+  margin-top: 18px;
   margin-left: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2156,6 +2170,7 @@ background-color: transparent;
   line-height: 18.2px;
   white-space: nowrap; 
   margin-left: 10px;
+  z-index: 1;
 
 }
 
@@ -2163,6 +2178,7 @@ background-color: transparent;
   background-color: #ddd;
   width: 158px;
   transition: background-color 1s ease;
+  z-index: 1;
 }
 
 .caret {
@@ -2785,3 +2801,198 @@ background-color: transparent;
     margin-left: 10px;
     transition: background-color 1s ease;
   }
+
+
+
+
+
+.background-nav-opcoes-people-fifth {
+  
+    margin-top: -337px;
+    margin-left: 20px;
+    display: flex;
+    padding-right: 284px;
+   position: relative;
+    padding-top: 270px;
+    margin-left: 25px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+}
+
+
+
+
+
+.nav-photo-peple-fifth { /* primeira foto */
+    margin-left: 100px;
+    margin-top: -90px;
+    display: flex;
+   
+    
+}
+.nav-photo-peple-fifth img {  /* tamanho da foto */
+    
+    margin-top: -60px;
+    margin-left: -10px;
+    width: 120px;
+    border-radius: 50% !important;
+    max-width: 90px;
+    max-height: 80px;
+    
+}
+.nav-photo-fifth { /* posicionamento da minha foto */
+   
+    display: flex;
+    margin-top: -70px;
+    margin-left: 10px;
+
+}
+
+
+
+
+
+.nav-text-fifth { /* primeiro nome*/
+    margin-left: -37px;
+    position: relative;
+    margin-top: -35px;
+}
+
+.nav-text-fifth h1 {
+    color: #428bca;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.nav-text-fifth a {
+    cursor: pointer;
+    color: #428bca;
+    text-decoration: none;
+}
+.nav-text-fifth a:hover {
+    text-decoration: underline;
+}
+/* fechamento do primeiro nome */
+
+
+/* Abertura do meu segundo nome nome */
+.nav-text-fifth-segundary {
+    margin-top: -10px;
+}
+
+.nav-text-fifth-segundary span {
+    color: #999999;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+}   /* FECHAMENTO */
+
+
+
+.nav-text-fifth-third {
+
+    text-align: center;
+    text-wrap: nowrap;
+    margin-top: 10px;
+    font-size: 14px;
+    height: auto;
+    line-height: 18.2px;
+    white-space: nowrap;
+
+}
+
+
+
+
+.btn-nav-people-fifth {
+    position: relative;
+    display: inline-block;
+   margin-left: -23px;
+  }
+  .btn-nav-fifth {
+
+  border-radius: 20px;
+  padding: 7px 20px;
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+  display: flex;
+  width: 90px;
+  margin-top: 14px;
+  margin-left: 40px;
+  transition: background-color 0.2s; 
+  border-color: rgb(204, 204, 204);
+  align-items: center;
+  } 
+
+  .btn-nav-fifth:hover, .btn-nav-fifth.select{
+    background-color: #d2d2d2;
+    
+  }
+
+
+
+  .opcoes-nav-text-fifth {
+    margin-left: -10px;
+    margin-top: -2px;
+}
+.opcoes-nav-text-fift span {
+    color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+
+
+.text-terse-fifth {
+    display: flex;
+    margin-left: 5;
+  }
+
+
+
+  
+  .btn-opcoes-nav-fifth-3 {
+    display: none;
+    
+    background-color: #f1f1f1;
+    min-width: 210px;
+    margin-top: 12px;
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+.btn-opcoes-nav-fifth-3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    height: auto;
+    line-height: 18.2px;
+    white-space: nowrap; 
+    margin-left: 10px;
+    font-size: 15px;
+    width: 0;
+    
+    
+}
+
+.btn-opcoes-nav-fifth-3 a:hover {
+    background-color: #ddd;
+    width: 158px;
+    margin-left: 10px;
+    
+  }
+
