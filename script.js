@@ -285,6 +285,8 @@ var dropdownVisible2 = false;
 // fechamento
  
 
+// Abertura 
+
 var dropdownVisible6 = false;
 
   function toggleDropdown6() {
@@ -325,3 +327,46 @@ var dropdownVisible6 = false;
   });
 
 
+
+  // fechamento
+
+
+
+  var dropdownVisible7 = false;
+
+  function toggleDropdown7() {
+    var dropdownContent = document.getElementById("btncontent-7");
+    var caretDown = document.querySelector(".caret-down-7");
+    var caretUp = document.querySelector(".caret-up-7");
+    var button = document.querySelector(".btn-nav-decima");
+
+    dropdownVisible7 = !dropdownVisible7;
+    if (dropdownVisible7) {
+      dropdownContent.style.display = "block";
+      caretDown.style.display = "none";
+      caretUp.style.display = "block";
+      button.classList.add("select");
+    } else {
+      dropdownContent.style.display = "none";
+      caretDown.style.display = "block";
+      caretUp.style.display = "none";
+      button.classList.remove("select");
+    }
+  }
+
+  document.addEventListener('click', function(event) {
+    var isClickInsideDropdown = document.getElementById('btncontent-7').contains(event.target);
+    var isClickOnButton = event.target.closest('.btn-nav-people-decima');
+    var button = document.querySelector(".btn-nav-decima");
+
+    if (!isClickInsideDropdown && !isClickOnButton) {
+      var dropdownContent = document.getElementById('btncontent-7');
+      var caretDown = document.querySelector(".caret-down-7");
+      var caretUp = document.querySelector(".caret-up-7");
+      dropdownContent.style.display = 'none';
+      caretDown.style.display = "block";
+      caretUp.style.display = "none";
+      dropdownVisible7 = false;
+      button.classList.remove("select");
+    }
+  });
