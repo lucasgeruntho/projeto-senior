@@ -3375,4 +3375,225 @@ text-decoration: underline;
     width: 158px;
     margin-left: 10px;
     
+
+}
+
+
+
+
+.background-nav-opcoes-people-eleven {
+    margin-top: -270px;
+    display: flex;
+    padding-right: 261px;
+    position: relative;
+    padding-top: 180px;
+    margin-left: 19px;
+    border: 1px solid #ddd;
+    background-color: transparent;
   }
+
+
+
+
+  .nav-photo-people-eleven { /* primeira foto */
+    margin-left: 100px;
+    margin-top: 2px;
+    display: flex;
+    
+}
+.nav-photo-people-eleven img {  /* tamanho da foto */
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -10px;
+    width: 120px;
+    border-radius: 50% !important;
+    max-width: 90px;
+    max-height: 80px;
+}
+.nav-photo-eleven { /* posicionamento da minha foto */
+    position: relative;
+    display: flex;
+    margin-top: -70px;
+    margin-left: 10px;
+
+}
+
+
+.nav-text-eleven { /* primeiro nome*/
+    margin-left: -48px;
+    position: relative;
+    margin-top: -39px;
+}
+
+
+.nav-text-eleven h1 {
+    color: #428bca;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+    .nav-text-eleven a {
+    cursor: pointer;
+    color: #428bca;
+    text-decoration: none;
+    }
+    
+    .nav-text-eleven a:hover {
+    text-decoration: underline;
+    }
+    
+
+
+
+    /* Abertura do meu segundo nome nome */
+.nav-text-eleven-segundary {
+    margin-top: -12px;
+    margin-left: -2px;
+}
+
+.nav-text-eleven-segundary span {
+    color: #999999;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+}   /* FECHAMENTO */
+
+
+.nav-text-eleven-third {
+
+    text-align: center;
+    text-wrap: nowrap;
+   
+    font-size: 14px;
+    margin-top: 08px;
+    height: auto;
+    line-height: 18.2px;
+    white-space: nowrap;
+}
+
+
+.btn-nav-people-eleven {
+    position: absolute;
+    display: inline-block;
+    margin-left: -1px;
+    width: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .btn-nav-eleven {
+
+  border-radius: 20px;
+  padding: 7px 20px;
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+  display: flex;
+  width: 90px;
+  margin-top: 14px;
+  margin-left: 40px;
+  transition: background-color 0.2s; 
+  border-color: rgb(204, 204, 204);
+  align-items: center;
+  } 
+
+  .btn-nav-eleven:hover, .btn-nav-eleven.select{
+    background-color: #d2d2d2;
+    
+  }
+  .opcoes-nav-text-eleven {
+    margin-left: -10px;
+    margin-top: -2px;
+}
+.opcoes-nav-text-eleven span {
+    color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+
+
+.text-terse-eleven {
+    display: flex;
+    margin-left: 5;
+}
+
+
+
+.btn-opcoes-nav-eleven-3 {
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 210px;
+    margin-top: 12px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 30px;
+    
+}
+
+.btn-opcoes-nav-eleven-3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    height: auto;
+    line-height: 18.2px;
+    white-space: nowrap; 
+    margin-left: 10px;
+    font-size: 15px;
+    width: 0;
+    
+    
+}
+
+.btn-opcoes-nav-eleven-3 a:hover {
+    background-color: #ddd;
+    width: 158px;
+    margin-left: 10px;
+    
+
+}
+
+
+
+.testsauhausa {
+    display: flex;
+    z-index: 1;
+}
+.testsauhausa h1 {
+    color: slateblue;
+    z-index: 1;
+    margin-left: 90px;
+}
+
+
+
+
+.info-button {
+    margin: 0px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    z-index: 1;
+    width: 120px;
+}
+
+.info-button:hover {
+    background-color: #0056b3;
+}
+
+

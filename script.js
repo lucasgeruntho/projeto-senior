@@ -370,3 +370,55 @@ var dropdownVisible6 = false;
       button.classList.remove("select");
     }
   });
+
+
+
+
+
+  // fechamento na minha 7 pessoa
+
+
+
+
+  
+  var dropdownVisible8 = false;
+
+  function toggleDropdown8() {
+    var dropdownContent = document.getElementById("btncontent-8");
+    var caretDown = document.querySelector(".caret-down-8");
+    var caretUp = document.querySelector(".caret-up-8");
+    var button = document.querySelector(".btn-nav-eleven");
+
+    dropdownVisible8 = !dropdownVisible8;
+    if (dropdownVisible8) {
+      dropdownContent.style.display = "block";
+      caretDown.style.display = "none";
+      caretUp.style.display = "block";
+      button.classList.add("select");
+    } else {
+      dropdownContent.style.display = "none";
+      caretDown.style.display = "block";
+      caretUp.style.display = "none";
+      button.classList.remove("select");
+    }
+  }
+
+  document.addEventListener('click', function(event) {
+    var isClickInsideDropdown = document.getElementById('btncontent-8').contains(event.target);
+    var isClickOnButton = event.target.closest('.btn-nav-people-eleven');
+    var button = document.querySelector(".btn-nav-eleven");
+
+    if (!isClickInsideDropdown && !isClickOnButton) {
+      var dropdownContent = document.getElementById('btncontent-8');
+      var caretDown = document.querySelector(".caret-down-8");
+      var caretUp = document.querySelector(".caret-up-8");
+      dropdownContent.style.display = 'none';
+      caretDown.style.display = "block";
+      caretUp.style.display = "none";
+      dropdownVisible8 = false;
+      button.classList.remove("select");
+    }
+  });
+
+
+
