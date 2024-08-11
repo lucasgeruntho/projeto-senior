@@ -910,10 +910,10 @@ margin-left: 13px;
 
 .linha-horizontal { 
     display: flex;
+    z-index: 1;
 
 }
   .linha {
-    
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -1917,7 +1917,7 @@ line-height: 24px;
     height: 1px;
     margin-left: 100px;
     background-color: #ddd;
-    top: 36%;
+    top: 35%;
 }
 
 
@@ -1935,7 +1935,7 @@ left: 107px;
 width: 88%;
 height: 1px;
 background-color: #ddd;
-top: 42%;
+top: 41%;
 z-index: 1;
 }
 
@@ -1947,7 +1947,7 @@ z-index: 1;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: 1px solid #ddd;
     background-color: #ffffff;
-    height: 690px;
+    height: 700px;
     padding-top: 17px;
     padding-right: 1200px;
     padding-left: 30px;
@@ -2811,7 +2811,7 @@ background-color: transparent;
 /* primeira opção de background */
 .background-nav-opcoes-people-fifth {
   
-    margin-top: -337px;
+    margin-top: -349px;
     display: flex;
     padding-right: 284px;
    position: relative;
@@ -3557,7 +3557,7 @@ text-decoration: underline;
 }
 
 .btn-opcoes-nav-eleven-3 a:hover {
-    background-color: #ddd;
+    background-color: hsl(0, 0%, 87%);
     width: 158px;
     margin-left: 10px;
     
@@ -3597,3 +3597,63 @@ text-decoration: underline;
 }
 
 
+
+.options-click-nav {
+    cursor: pointer;
+    margin-top: -270px;
+    display: flex;
+    position: relative;
+    padding-top: 280px;
+    margin-left: 19px;
+}
+
+
+.options-click-primary {
+background-color: transparent;
+margin-left: 10px;
+border: 1px solid rgb(204, 204, 204);
+padding: 6px 20px;
+margin-top: 10px;
+}
+
+.options-click-primary-icon-svg {
+    margin-left: -5px;
+    padding-top: 4px;
+}
+
+
+.options-click-primary-icon-svg svg {
+    width: 10px;
+}
+
+
+
+.options-click-nav-2 {
+    cursor: pointer;
+    margin-top: -270px;
+    display: flex;
+    position: relative;
+    padding-top: 280px;
+    margin-left: 19px;
+}
+
+
+.options-click-primary-2 {
+background-color: transparent;
+margin-left: -19px;
+border: 1px solid rgb(204, 204, 204);
+padding: 6px 20px;
+}
+
+.options-click-primary-2-icon-svg {
+    margin-left: -5px;
+    padding-top: 4px;
+}
+
+
+.options-click-primary-2-icon-svg svg {
+    width: 10px;
+}
+
+
+    
